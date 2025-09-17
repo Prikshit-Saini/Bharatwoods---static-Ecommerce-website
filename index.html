@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElegantWood | Premium Handcrafted Furniture from India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Premium Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="wood-texture"></div>
+            <h1>ELEGANT<span>WOOD</span></h1>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>ELEGANT<span>WOOD</span></h1>
+                <p>Premium Furniture Exporters Since 2023</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#products" class="nav-link">Collections</a></li>
+                    <li><a href="#craftsmanship" class="nav-link">Craftsmanship</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Export Inquiry</a></li>
+                    <li class="currency-selector">
+                        <span>USD</span>
+                        <ul class="currency-dropdown">
+                            <li data-currency="USD">$ USD</li>
+                            <li data-currency="GBP">£ GBP</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Artisanal Wooden Furniture</h2>
+            <h1>From India to the World</h1>
+            <p>Handcrafted with centuries-old techniques, delivered to your doorstep</p>
+            <a href="#products" class="btn-primary">Explore Collections</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="products-section">
+        <div class="section-header">
+            <h2>Our Premium Collections</h2>
+            <p>Select from our handcrafted furniture ranges</p>
+        </div>
+        
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="living">Living Room</button>
+            <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+            <button class="filter-btn" data-filter="dining">Dining</button>
+            <button class="filter-btn" data-filter="office">Office</button>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Product cards will be dynamically loaded here -->
+        </div>
+        
+        <div class="load-more-container">
+            <button id="load-more" class="btn-secondary">Load More</button>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section id="craftsmanship" class="craftsmanship-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Craftsmanship</h2>
+                <p>Traditional techniques meet modern design</p>
+            </div>
+            
+            <div class="craftsmanship-grid">
+                <div class="craftsmanship-item">
+                    <div class="craftsmanship-image">
+                        <img src="https://images.unsplash.com/photo-1602872030490-4a484a7b3ba6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Wood Carving">
+                    </div>
+                    <div class="craftsmanship-content">
+                        <h3>Hand Carving</h3>
+                        <p>Each piece is meticulously hand-carved by our master craftsmen using techniques passed down through generations.</p>
+                    </div>
+                </div>
+                
+                <div class="craftsmanship-item">
+                    <div class="craftsmanship-image">
+                        <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Wood Selection">
+                    </div>
+                    <div class="craftsmanship-content">
+                        <h3>Sustainable Wood Selection</h3>
+                        <p>We use only ethically sourced, premium quality hardwoods that are both durable and beautiful.</p>
+                    </div>
+                </div>
+                
+                <div class="craftsmanship-item">
+                    <div class="craftsmanship-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Finishing">
+                    </div>
+                    <div class="craftsmanship-content">
+                        <h3>Natural Finishes</h3>
+                        <p>Our furniture is finished with non-toxic, eco-friendly oils and waxes that enhance the wood's natural beauty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About ElegantWood</h2>
+                    <p>Founded in 2023, ElegantWood brings together India's finest furniture craftsmen to create exceptional pieces for international markets.</p>
+                    <p>Based in Jaipur, India, we combine traditional woodworking techniques with contemporary designs to create furniture that stands the test of time.</p>
+                    <p>Our mission is to showcase India's rich woodworking heritage while meeting the highest international quality standards.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Our Workshop">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Export Inquiry</h2>
+                <p>Contact us for wholesale orders and international shipping</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Furniture Street, Jaipur, India</p>
+                    <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+                    <p><i class="fas fa-envelope"></i> export@elegantwood.com</p>
+                    
+                    <div class="business-hours">
+                        <h4>Business Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Company Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Country</option>
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="CA">Canada</option>
+                            <option value="AU">Australia</option>
+                            <option value="EU">European Union</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ELEGANT<span>WOOD</span></h3>
+                    <p>Premium wooden furniture exporters from India to the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Collections</a></li>
+                        <li><a href="#craftsmanship">Craftsmanship</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new collections and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 ElegantWood. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
